@@ -1,0 +1,10 @@
+{
+    "id" : "com.app.rora.service.biometrics",
+    "description":"Native service that biometrics service in the JARVIS",
+    "engine":"native",
+    "executable":"biometrics_service",
+    "services": [{
+      "name": "com.app.rora.service.biometrics",
+      "description": "Native service that biometrics service in the JARVIS"
+    }]
+}
