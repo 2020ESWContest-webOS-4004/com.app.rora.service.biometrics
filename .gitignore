@@ -1,0 +1,4 @@
+BUILD/
+pkg_*
+com.*
+*.swp
