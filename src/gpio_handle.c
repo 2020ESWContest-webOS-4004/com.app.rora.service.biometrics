@@ -155,8 +155,6 @@ void *knock_check_thread(LSHandle  *sh)
             }
             else{
                 digitalWrite(LEFT_WINDOW_LED, LOW);
-                //인증 진행 요청 기능 구현예정
-                //LSCall(sh, "luna://com.app.rora.service.webcontrol/set_auth", "{\"value\":\"test!!\"}", "", NULL, NULL, &lserror);
             }
             sleep(1);
         }
