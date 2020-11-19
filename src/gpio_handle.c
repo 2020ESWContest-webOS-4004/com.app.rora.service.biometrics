@@ -75,13 +75,14 @@ void *knock_check_thread(LSHandle  *sh)
             if(val == HIGH){
                 digitalWrite(LEFT_WINDOW_LED, HIGH);
                 //  인증을 위한 요청이 필요
+                LSCall(sh, "luna://com.webos.service.tts/speak", "{\"text\":\"화면을 바라봐주세요\", \"language\": \"ko-KR\", \"clear\":true}", NULL, NULL, NULL, &lserror);
                 LSCall(sh, "luna://com.app.rora.service.webcontrol/request_camera", "{}", NULL, sh, NULL, &lserror);
                 digitalWrite(LEFT_WINDOW_LED, LOW);
             }
             else{
                 digitalWrite(LEFT_WINDOW_LED, LOW);
             }
-            sleep(1);
+            sleep(0.99);
         }
     }
 }
